@@ -1,0 +1,38 @@
+.Card {
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative; /* Añade esta línea */
+}
+
+.Card .info{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+}
+
+.Card .info button{
+    display: flex;
+    background-color: green;
+    font-size: large;
+    padding: 10px;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    margin:7px;
+}
+
+.Card img{
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+.unidad {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+}

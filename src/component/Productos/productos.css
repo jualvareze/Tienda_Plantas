@@ -1,0 +1,19 @@
+.productos{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap:2vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30vh,40vh));
+}
+
+@media (width <= 355px) {
+    .productos{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap:2vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

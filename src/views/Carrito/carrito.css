@@ -1,0 +1,11 @@
+.lista-productos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.head-product{
+    display: flex;
+    flex-direction: row;
+    gap:7px;
+}
