@@ -1,11 +1,13 @@
 import './cardcarrito.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faTrashCan} from '@fortawesome/free-solid-svg-icons'
 function CardCarrito(props){
     return(<>
     <div className="producto">
         <span>{props.nombre}</span>
         <span>precio</span>
         <span>Cantidad</span>
-        <i className="fa-solid fa-trash-can"></i>
+        <FontAwesomeIcon icon={faTrashCan} />
     </div>
     </>)
 }
