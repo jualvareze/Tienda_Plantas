@@ -1,4 +1,6 @@
 import './card.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faCartPlus} from '@fortawesome/free-solid-svg-icons'
 function Card(props) {
     return (
         <>
@@ -9,7 +11,7 @@ function Card(props) {
                     <span>Nombre:</span>
                     <span>Precio:</span>
                     <button>
-                    <i className="fa-solid fa-cart-plus"></i>
+                    <FontAwesomeIcon icon={faCartPlus} />
                     </button>
                 </div>
             </div>
