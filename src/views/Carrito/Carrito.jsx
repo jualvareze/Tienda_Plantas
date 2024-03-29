@@ -1,6 +1,9 @@
 import './carrito.css'
 import CardCarrito from '../../component/CardCarrito/CardCarrito'
+import MyContext from "../../context/context";
+import { useContext } from "react";
 function Carrito(){
+    const { setProducts,products } = useContext(MyContext);
     return(
         <>
         <h2>Carrito</h2>
@@ -11,13 +14,14 @@ function Carrito(){
         <span>Cantidad</span>
         <span></span>
             </div>
-            <CardCarrito/>
-            <CardCarrito/>
-            <CardCarrito/>
-            <CardCarrito/>
-            <CardCarrito/>
-            <CardCarrito/>
-            <CardCarrito/>
+            {products.map(product => (
+                    <CardCarrito 
+                        key={product.id} 
+                        nombre="prod"
+                        precio={product.precio}
+                        cantidad={product.cantidad}
+                    />
+                ))}
         </div>
         </>
     )

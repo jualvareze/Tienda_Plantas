@@ -8,12 +8,14 @@ import SobreNosotros from './views/SobreNosotros/SobreNosotros';
 import Header from './component/Header/Header';
 import Footer from './component/footer/Footer';
 import Carrito from './views/Carrito/Carrito';
+import AgregarProducto from './component/AgregarProducto/AgregarProducto';
 function App() {
-const {listaProductos,setListaProductos} = useState([])
-const listProducts = {listaProductos,setListaProductos}
+const [products,setProducts] = useState([]) //carrito
+
+
   return (
     <>
-    <MyContext.Provider value={listProducts}>
+    <MyContext.Provider value={{products,setProducts}}>
       <BrowserRouter>
         <Header></Header>
         <main>
@@ -21,6 +23,7 @@ const listProducts = {listaProductos,setListaProductos}
             <Route path="/" element={<Home/>}></Route>
             <Route path="/SobreNosotros" element={<SobreNosotros/>}></Route>
             <Route path="/Carrito" element={<Carrito/>}></Route>
+            <Route path="/AgregarProducto" element={<AgregarProducto></AgregarProducto>}></Route>
           </Routes>
         </main>
         <Footer></Footer>

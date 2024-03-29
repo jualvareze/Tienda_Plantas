@@ -1,9 +1,9 @@
 import './cardcarrito.css'
-function CardCarrito(){
+function CardCarrito(props){
     return(<>
     <div className="producto">
-        <span>Nombre</span>
-        <span>Precio</span>
+        <span>{props.nombre}</span>
+        <span>precio</span>
         <span>Cantidad</span>
         <i className="fa-solid fa-trash-can"></i>
     </div>
