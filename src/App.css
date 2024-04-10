@@ -4,9 +4,7 @@
 
 main{
   color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   min-height: 92vh;
   padding: 5%;
+  box-sizing: border-box;
 }

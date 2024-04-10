@@ -16,8 +16,7 @@ function Carrito(){
             </div>
             {products.map(product => (
                     <CardCarrito 
-                        key={product.id} 
-                        nombre="prod"
+                        nombre={product.nombre} 
                         precio={product.precio}
                         cantidad={product.cantidad}
                     />
