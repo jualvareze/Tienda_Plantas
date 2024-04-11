@@ -1,5 +1,6 @@
 .Card {
     border: solid 2px black;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;

@@ -1,9 +1,9 @@
 .productos{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap:50px;
     display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:50px;
     grid-template-columns: repeat(auto-fit,minmax(30vh,40vh));
 }
 

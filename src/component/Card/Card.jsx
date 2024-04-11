@@ -4,30 +4,28 @@ import {faCartPlus} from '@fortawesome/free-solid-svg-icons'
 import MyContext from "../../context/context";
 import { useContext } from 'react';
 function Card(props) {
-    const { products,setProducts } = useContext(MyContext);
+    const { products,setProducts,carrito, setCarrito } = useContext(MyContext);
 
-    const productoExiste= () =>{
-        const newProducts = [...products];
-        const index = newProducts.findIndex(producto => producto.nombre === props.nombre);
-        console.log(index)
+    const productoExiste= () =>{ // valida si existe por nombre
+        const newCarrito = [...carrito];
+        const index = newCarrito.findIndex(producto => producto.nombre === props.nombre);
         if (index == -1){
             agregarProducto()
         }else{
-            console.log("agregar cantidad")
-            newProducts[index].cantidad =  newProducts[index].cantidad + 1
-            setProducts(newProducts)
+            newCarrito[index].cantidad =  newCarrito[index].cantidad + 1
+            setCarrito(newCarrito)
         }
 }
 
 
-    const agregarProducto = () =>{
-        const nuevoProducto={
+    const agregarProducto = () =>{  // agrega el producto al carrito
+        const nuevoCarrito={
             nombre: props.nombre,
             precio: props.precio,
             imagen: props.imagen,
             cantidad: 1
         }
-        setProducts([...products,nuevoProducto])
+        setCarrito([...carrito,nuevoCarrito])
     }
 
 

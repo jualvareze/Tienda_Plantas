@@ -3,6 +3,8 @@
 }
 
 main{
+  display: flex;
+  justify-content: center;
   color: black;
   min-height: 92vh;
   padding: 5%;

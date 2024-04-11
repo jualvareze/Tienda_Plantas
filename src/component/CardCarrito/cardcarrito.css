@@ -1,4 +1,4 @@
-.producto{
+.card-carrito{
     display: flex;
     flex-direction: row;
     gap:7px;

@@ -1,3 +1,7 @@
+.carrito{
+    text-align: center;
+}
+
 .lista-productos{
     display: flex;
     flex-direction: column;
