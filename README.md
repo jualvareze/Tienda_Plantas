@@ -1,8 +1,20 @@
-# React + Vite
+# Tienda de Plantas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Descripcion
+Este e-commerce de plantas gestiona los productos deseados y permite agregarlos al carrito para su posterior compra, el administrador podra eliminar, agregar y editar productos a gusto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Json producto
+
+[
+{
+  "idProducto": id,
+  "urlImagen": "ruta/cactus.jpeg",
+  "nombre": "Cactus",
+  "desc": "descripcion-cactus",
+  "tipo": "exterior",
+  "precio": "4.000"
+}
+]
+
+

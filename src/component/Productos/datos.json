@@ -1,93 +1,26 @@
 [
-  {
-    "idProducto": 1,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgCactus",
-    "nombre": "Cactus",
-    "precio": "4.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  },
-  {
-    "idProducto": 2,
-    "urlImagen": "src/component/Productos/img/cactus.jpeg",
-    "imagen": "imgAloeVera",
-    "nombre": "Aloe vera",
-    "precio": "5.000"
-  }
+{
+  "idProducto": 1,
+  "urlImagen": "src/component/Productos/img/cactus.jpeg",
+  "nombre": "Cactus",
+  "desc": "descripcion-producto",
+  "tipo": "exterior",
+  "precio": "4.000"
+},
+{
+  "idProducto": 2,
+  "urlImagen": "src/component/Productos/img/cactus.jpeg",
+  "nombre": "Cactus",
+  "desc": "descripcion-producto",
+  "tipo": "exterior",
+  "precio": "4.000"
+},
+{
+  "idProducto": 3,
+  "urlImagen": "src/component/Productos/img/cactus.jpeg",
+  "nombre": "Cactus",
+  "desc": "descripcion-producto",
+  "tipo": "exterior",
+  "precio": "4.000"
+}
 ]
