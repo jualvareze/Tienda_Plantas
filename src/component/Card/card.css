@@ -1,5 +1,5 @@
 .Card {
-    border: solid 2px black;
+    border: solid 1px black;
     max-width: 350px;
     display: flex;
     flex-direction: column;
@@ -22,10 +22,15 @@
     background-color: green;
     font-size: large;
     padding: 10px;
+    border: solid 1px black;
     border-radius: 7px;
     justify-content: center;
     align-items: center;
     margin:7px;
+}
+
+.Card .info button:hover{
+    color:rgb(11, 255, 11);
 }
 
 .Card img{
@@ -33,9 +38,8 @@
     height: 200px; 
 }
 
-.unidad {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
+.Card .info span{
+    border-bottom: solid 1px rgb(117, 117, 117);
+    width: 100%;
+    text-align: center;
 }

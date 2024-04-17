@@ -33,12 +33,12 @@ function Card(props) {
         <>
             <div className='Card'>
                 <img src={props.imagen} alt="" />
-                <span className="unidad">0</span>
                 <div className='info'>
-                    <span>Nombre:{props.nombre}</span>
-                    <span>Precio:${props.precio}</span>
+                    <span>Nombre: {props.nombre}</span>
+                    <span>Tipo: {props.tipo}</span>
+                    <span>Precio: ${props.precio}</span>
                     <button onClick={() => productoExiste()}>
-                    <FontAwesomeIcon icon={faCartPlus} />
+                    <FontAwesomeIcon alt="añadir al carrito" icon={faCartPlus} />
                     </button>
                 </div>
             </div>

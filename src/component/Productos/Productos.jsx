@@ -16,6 +16,7 @@ function Productos() {
             key={producto.idProducto}
             imagen={producto.urlImagen}
             nombre={producto.nombre}
+            tipo={producto.tipo}
             precio={producto.precio}
           />
         ))}
