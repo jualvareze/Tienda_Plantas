@@ -27,16 +27,22 @@ function CardCarrito(props) {
     setCarrito(newProducts);
   };
 
+
   return (
     <>
       <div className="card-carrito">
-        <span>{props.nombre}</span>
-        <span>{props.precio}</span>
-        <span>{props.cantidad}</span>
-        <FontAwesomeIcon
-          icon={faTrashCan}
-          onClick={() => productoExiste(props.nombre)}
-        />
+        <img src={props.urlImagen} alt="" />
+        <div className="info-card-carrito">
+          <span>Nombre: {props.nombre}</span>
+          <span>Tipo: {props.tipo}</span>
+          <span>Precio: {props.precio}</span>
+          <span>Cantidad: {props.cantidad}
+            <FontAwesomeIcon
+              icon={faTrashCan}
+              className="eliminar-card-carrito"
+              onClick={() => productoExiste(props.nombre)}
+            /></span>
+        </div>
       </div>
     </>
   );

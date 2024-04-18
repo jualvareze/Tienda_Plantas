@@ -5,15 +5,15 @@
   "nombre": "Cactus",
   "desc": "descripcion-producto",
   "tipo": "exterior",
-  "precio": "4.000"
+  "precio": 4000
 },
 {
   "idProducto": 2,
-  "urlImagen": "src/component/Productos/img/cactus.jpeg",
-  "nombre": "Cactus",
+  "urlImagen": "src/component/Productos/img/aloe_vera.jpeg",
+  "nombre": "aloe vera",
   "desc": "descripcion-producto",
   "tipo": "exterior",
-  "precio": "4.000"
+  "precio": 3000
 },
 {
   "idProducto": 3,
@@ -21,6 +21,6 @@
   "nombre": "Cactus",
   "desc": "descripcion-producto",
   "tipo": "exterior",
-  "precio": "4.000"
+  "precio": 4000
 }
 ]

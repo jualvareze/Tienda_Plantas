@@ -10,7 +10,7 @@ function Card(props) {
         const newCarrito = [...carrito];
         const index = newCarrito.findIndex(producto => producto.nombre === props.nombre);
         if (index == -1){
-            agregarProducto()
+            agregarCarrito()
         }else{
             newCarrito[index].cantidad =  newCarrito[index].cantidad + 1
             setCarrito(newCarrito)
@@ -18,16 +18,21 @@ function Card(props) {
 }
 
 
-    const agregarProducto = () =>{  // agrega el producto al carrito
+    const agregarCarrito = () =>{  // agrega el producto al carrito
         const nuevoCarrito={
             nombre: props.nombre,
             precio: props.precio,
-            imagen: props.imagen,
+            urlImagen: props.imagen,
+            tipo: props.tipo,
             cantidad: 1
         }
         setCarrito([...carrito,nuevoCarrito])
     }
 
+    const formatearNumero = new Intl.NumberFormat("es-CL", {
+        style: "currency",
+        currency: "CLP",
+      });
 
     return (
         <>
@@ -36,7 +41,7 @@ function Card(props) {
                 <div className='info'>
                     <span>Nombre: {props.nombre}</span>
                     <span>Tipo: {props.tipo}</span>
-                    <span>Precio: ${props.precio}</span>
+                    <span>Precio: {formatearNumero.format(props.precio)}</span>
                     <button onClick={() => productoExiste()}>
                     <FontAwesomeIcon alt="añadir al carrito" icon={faCartPlus} />
                     </button>

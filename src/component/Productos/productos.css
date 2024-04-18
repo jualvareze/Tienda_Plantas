@@ -7,6 +7,10 @@
     grid-template-columns: repeat(auto-fit,minmax(30vh,40vh));
 }
 
+.lista-productos{
+    width: 100%;
+}
+
 @media (width <= 355px) {
     .productos{
         width: 100%;

@@ -1,15 +1,14 @@
 .carrito{
+    display: flex;
+    align-items: center;
     text-align: center;
+    flex-direction: column;
 }
 
 .lista-productos{
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.head-product{
-    display: flex;
-    flex-direction: row;
-    gap:7px;
+    padding: 30px;
+    border-bottom: solid 1px black;
 }
