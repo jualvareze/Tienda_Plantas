@@ -9,6 +9,7 @@ import Footer from './component/footer/Footer';
 import Carrito from './views/Carrito/Carrito';
 import AgregarProducto from './component/AgregarProducto/AgregarProducto';
 import Catalogo from './views/Catalogo/Catalogo'
+import Admin from './views/private/admin/Admin';
 function App() {
 const [products,setProducts] = useState([]) //productos
 const [carrito,setCarrito] = useState([]) // carrito
@@ -40,6 +41,7 @@ useEffect(()=>{
         <main>
           <Routes>
             <Route path="/" element={<Catalogo/>}></Route>
+            <Route path="/admin" element={<Admin/>}></Route>
             <Route path="/SobreNosotros" element={<SobreNosotros/>}></Route>
             <Route path="/Carrito" element={<Carrito/>}></Route>
             <Route path="/AgregarProducto" element={<AgregarProducto></AgregarProducto>}></Route>
