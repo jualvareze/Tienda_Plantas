@@ -16,8 +16,10 @@
     font-size:20px ;
     padding: 5px;
     background-color: green;
+    color: rgb(255, 255, 255);
     border:1px black solid;
     transition: 0.7s;
+    text-decoration: none;
 }
 
 .btn-ingresar:hover{

@@ -13,12 +13,12 @@ import Admin from './views/private/admin/Admin';
 function App() {
 const [products,setProducts] = useState([]) //productos
 const [carrito,setCarrito] = useState([]) // carrito
-const apiUrl = "./src/component/Productos/datos.json";
+const apiUrl = import.meta.env.VITE_API_URL;
 
 useEffect(()=>{
-  const fetchData = async () => {
+  const getPlants = async () => {
     try {
-      const response = await fetch(apiUrl);
+      const response = await fetch(apiUrl+"/plants");
       if (!response.ok) {
         throw new Error("La solicitud no fue exitosa");
       }
@@ -28,8 +28,8 @@ useEffect(()=>{
       console.error("Error al obtener los datos:", error);
     }
   };
-  fetchData()
-})
+  getPlants()
+},[])
 
 
 

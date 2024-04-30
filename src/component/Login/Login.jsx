@@ -1,5 +1,7 @@
 import './login.css'
+import { Link } from 'react-router-dom';
 const Login = () => {
+    
   return (
     <>
       <div className="login">
@@ -10,7 +12,7 @@ const Login = () => {
           <input type="text" name="" id="" className='input-login'/>
           <span>Contraseña</span>
           <input type="text" name="" id="" className='input-login'/>
-          <button className='btn-ingresar'>Ingresar</button>
+          <Link className="btn-ingresar" to='/'>Ingresar</Link>
         </form>
       </div>
     </>
